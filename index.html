@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table
+        {
+            border-collapse:collapse;
+        }
+
+        table tr td
+        {
+            border:1px solid #7e7272;
+            padding:5px;
+        }
+        .for_colums
+        {
+            text-align:center;
+            width:150px;
+        }
+        tr:nth-child(odd)
+        {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2><b>Market Research Survey</b></h2>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <hr>
+        <label for="range"><b>What is your age range?</b></label><br>
+        <select name="range" id="range">
+            <option value="1" style="width:300px;">18-24</option>
+            <option value="2">25-30</option>
+            <option value="3">31-50</option>
+            <option value="4">50+</option>
+        </select><br><br>
+        <label for="money"><b>What is your yearly income range?</b></label><br>
+        <select name="money" id="money">
+            <option value="1">$0 - $25,000</option>
+            <option value="2">$25,001 - $50,000</option>
+            <option value="3">$50,001 - $100,000</option>
+            <option value="4">$100,000+</option>
+        </select>
+        <p><b>Gender Identify</b></p>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="nonbinary">
+        <label for="nonbinary">Nonbinary</label><br>
+        <input type="radio" name="gender" id="other">
+        <label for="other" id="xxx">Other <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"></label><br>
+        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maximum of <b>250</b> characters.&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i>Currently Used: <b>0</b> characters</i></small>
+        <p><b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b></p>
+        <input type="checkbox" id="product1" name="product1" value="product1">
+        <label for="product1">Product 1</label><br>
+        <input type="checkbox" id="product2" name="product1" value="product1">
+        <label for="product2">Product 2</label><br>
+        <input type="checkbox" id="product3" name="product1" value="product1">
+        <label for="product3">Product 3</label>
+        <p><b>How often would you use our new product?</b></p>
+        $ <input type="text" id="dollar" name="dollar" size="7">.<input type="text" id="cent" name="cent" size="1" maxlength="2"><br>
+        &nbsp;&nbsp;&nbsp;<label for="dollar">Dollars</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cent">Cents</label>
+        <label for="liketosee"><b>What features would you like to see in the new product.</b></label>
+        <textarea name="liketosee" id="liketosee" cols="250" rows="10"></textarea>
+        <p>Please rate your level of agreement with the following statements.</p>
+        <table>
+            <tr style="height:50px">
+                <td></td>
+                <td class="for_colums">Strongly Disagree</td>
+                <td class="for_colums">Disagree</td>
+                <td class="for_colums">Agree</td>
+                <td class="for_colums">Strong Agree</td>
+            </tr>
+            <tr>
+                <td><b>Our products are priced fairy.</b></td>
+                <td class="for_colums"><input type="radio" id="11" name="row2"><br>1</td>
+                <td class="for_colums"><input type="radio" id="12" name="row2"><br>2</td>
+                <td class="for_colums"><input type="radio" id="13" name="row2"><br>3</td>
+                <td class="for_colums"><input type="radio" id="14" name="row2"><br>4</td>
+            </tr>
+            <tr>
+                <td><b>Our products are high quality.</b></td>
+                <td class="for_colums"><input type="radio" id="21" name="row2"><br>1</td>
+                <td class="for_colums"><input type="radio" id="22" name="row2"><br>2</td>
+                <td class="for_colums"><input type="radio" id="23" name="row2"><br>3</td>
+                <td class="for_colums"><input type="radio" id="24" name="row2"><br>4</td>
+            </tr>
+            <tr>
+                <td><b>You would recommend our product to a friend or coworker.</b></td>
+                <td class="for_colums"><input type="radio" id="31" name="row2"><br>1</td>
+                <td class="for_colums"><input type="radio" id="32" name="row2"><br>2</td>
+                <td class="for_colums"><input type="radio" id="33" name="row2"><br>3</td>
+                <td class="for_colums"><input type="radio" id="34" name="row2"><br>4</td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
